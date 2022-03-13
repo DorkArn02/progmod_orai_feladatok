@@ -31,7 +31,6 @@ public class NewRegisterMainTest {
     @Rule
     public TemporaryFolder temporaryFolder = new TemporaryFolder();
 
-    /** Task 3
      @Test
      public void testWriteUsersIntoFile() throws IOException {
      String filepath = RESOURCE_PATH + WRITE_PREFIX + USERS + FILE_EXTENSION;
@@ -50,9 +49,8 @@ public class NewRegisterMainTest {
      user.getName() + ";" + user.getBirthYear() + ";" + user.getAddress());
      }
      }
-     */
 
-    /** Task 4
+
      @Test
      public void testReadUsersFromFile() throws IOException {
      String filepath = RESOURCE_PATH + READ_PREFIX + USERS + FILE_EXTENSION;
@@ -69,9 +67,7 @@ public class NewRegisterMainTest {
      user.getName() + ";" + user.getBirthYear() + ";" + user.getAddress());
      }
      }
-     */
 
-    /** Task 5
      @Test
      public void testWriteSongsIntoFile() throws IOException {
      String filepath = RESOURCE_PATH + WRITE_PREFIX + SONGS + FILE_EXTENSION;
@@ -134,9 +130,8 @@ public class NewRegisterMainTest {
      assertEquals(expected.get(actual.indexOf(song) + 1),
      song.getBand() + ";" + song.getTitle() + ";" + song.getLengthInMinutes());
      }
-     }*/
+     }
 
-    /** Task 6
      @Test
      public void testWriteNotesIntoFile() throws IOException {
      String filepath = RESOURCE_PATH + WRITE_PREFIX + NOTES + FILE_EXTENSION;
@@ -201,9 +196,8 @@ public class NewRegisterMainTest {
      note.getName() + ";" + note.getTopic() + ";" + note.getText());
      }
      }
-     */
 
-    /** Task 7
+
      @Test
      public void testWriteBooksIntoFile() throws IOException {
      String filepath = RESOURCE_PATH + WRITE_PREFIX + BOOKS + FILE_EXTENSION;
@@ -273,7 +267,7 @@ public class NewRegisterMainTest {
      book.getAuthor() + ";" + book.getTitle() + ";" + book.getIsbn());
      }
      }
-     */
+
 
     private static ArrayList<User> generateTestUsersList() {
         ArrayList<User> list = new ArrayList<>();

@@ -29,6 +29,8 @@ public class Song {
         this.lengthInMinutes = lengthInMinutes;
     }
 
+    public Song(){}
+
     public Song(String band, String title, double lengthInMinutes) {
         this.band = band;
         this.title = title;

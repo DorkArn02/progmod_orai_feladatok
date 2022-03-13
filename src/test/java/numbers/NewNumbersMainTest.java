@@ -99,7 +99,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testGenerateListLengthOne() {
-     ArrayList<Integer> expected = new ArrayList<Integer>();
+     ArrayList<Integer> expected = new ArrayList<>();
      expected.add(1);
      ArrayList<Integer> actual = NewNumbersMain.generateList(false, 1);
 
@@ -109,7 +109,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testGenerateListLengthTen() {
-     ArrayList<Integer> expected = new ArrayList<Integer>();
+     ArrayList<Integer> expected = new ArrayList<>();
      for (int i = 1; i <= 10; i++) {
      expected.add(i);
      }
@@ -124,7 +124,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testSelectEvenNumbersNoEvenNumber() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 1; i <= 100; i += 2) {
      list.add(i);
      }
@@ -134,7 +134,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testSelectEvenNumbersEvenAtStart() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      list.add(100);
      for (int i = 1; i <= 100; i += 2) {
      list.add(i);
@@ -145,7 +145,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testSelectEvenNumbersEvenAtEnd() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 1; i <= 100; i += 2) {
      list.add(i);
      }
@@ -156,32 +156,32 @@ public class NewNumbersMainTest {
 
      @Test
      public void testSelectEvenNumbersMultiple() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 0; i <= 100; i++) {
      list.add(i);
      }
 
      assertEquals(51, NewNumbersMain.selectEvenNumbers(list).size());
      }
-/*
+
      @Test
      public void testIntersectionEmptyList() {
-     ArrayList<Integer> list1 = new ArrayList<Integer>();
+     ArrayList<Integer> list1 = new ArrayList<>();
      for (int i = 0; i < 100; i++) {
      list1.add(i);
      }
 
-     assertEquals(0, NewNumbersMain.intersection(list1, new ArrayList<Integer>()).size());
+     assertEquals(0, NewNumbersMain.intersection(list1, new ArrayList<>()).size());
      }
 
      @Test
      public void testIntersectionEmptyIntersection() {
-     ArrayList<Integer> list1 = new ArrayList<Integer>();
+     ArrayList<Integer> list1 = new ArrayList<>();
      for (int i = 0; i < 100; i += 2) {
      list1.add(i);
      }
 
-     ArrayList<Integer> list2 = new ArrayList<Integer>();
+     ArrayList<Integer> list2 = new ArrayList<>();
      for (int i = 1; i < 100; i += 2) {
      list2.add(i);
      }
@@ -191,7 +191,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testIntersectionSameList() {
-     ArrayList<Integer> list1 = new ArrayList<Integer>();
+     ArrayList<Integer> list1 = new ArrayList<>();
      for (int i = 0; i < 100; i += 2) {
      list1.add(i);
      }
@@ -206,7 +206,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testNumberOfOddsNoOdd() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 0; i < 100; i += 2) {
      list.add(i);
      }
@@ -216,7 +216,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testNumberOfOddsAllOdd() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 1; i < 100; i += 2) {
      list.add(i);
      }
@@ -231,7 +231,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testContainsTrue() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 1; i < 100; i += 2) {
      list.add(i);
      }
@@ -241,7 +241,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testContainsFalse() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 0; i < 100; i += 2) {
      list.add(i);
      }
@@ -251,12 +251,12 @@ public class NewNumbersMainTest {
 
      @Test
      public void testSumEmptyList() {
-     assertEquals(0, NewNumbersMain.sum(new ArrayList<Integer>()));
+     assertEquals(0, NewNumbersMain.sum(new ArrayList<>()));
      }
 
      @Test
      public void testSum() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      int expected = 0;
      for (int i = 0; i < 100; i += 3) {
      list.add(i);
@@ -272,7 +272,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testIndexOfFirstElement() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 0; i < 100; i++) {
      list.add(i);
      }
@@ -282,7 +282,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testIndexOfMiddleElement() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 10; i < 100; i++) {
      list.add(i);
      }
@@ -292,7 +292,7 @@ public class NewNumbersMainTest {
 
      @Test
      public void testIndexOfLastElement() {
-     ArrayList<Integer> list = new ArrayList<Integer>();
+     ArrayList<Integer> list = new ArrayList<>();
      for (int i = 0; i < 100; i++) {
      list.add(i);
      }
@@ -302,27 +302,27 @@ public class NewNumbersMainTest {
 
      @Test
      public void testUnionTwoEmptyList() {
-     assertEquals(0, NewNumbersMain.union(new ArrayList<Integer>(), new ArrayList<Integer>()).size());
+     assertEquals(0, NewNumbersMain.union(new ArrayList<>(), new ArrayList<>()).size());
      }
 
      @Test
      public void testUnionEmptyList() {
-     ArrayList<Integer> list1 = new ArrayList<Integer>();
+     ArrayList<Integer> list1 = new ArrayList<>();
      for (int i = 0; i < 100; i++) {
      list1.add(i);
      }
 
-     assertEquals(100, NewNumbersMain.union(list1, new ArrayList<Integer>()).size());
+     assertEquals(100, NewNumbersMain.union(list1, new ArrayList<>()).size());
      }
 
      @Test
      public void testUnionTwoList() {
-     ArrayList<Integer> list1 = new ArrayList<Integer>();
+     ArrayList<Integer> list1 = new ArrayList<>();
      for (int i = 0; i < 100; i += 2) {
      list1.add(i);
      }
 
-     ArrayList<Integer> list2 = new ArrayList<Integer>();
+     ArrayList<Integer> list2 = new ArrayList<>();
      for (int i = 1; i < 100; i += 2) {
      list2.add(i);
      }
@@ -332,11 +332,11 @@ public class NewNumbersMainTest {
 
      @Test
      public void testUnionSameList() {
-     ArrayList<Integer> list1 = new ArrayList<Integer>();
+     ArrayList<Integer> list1 = new ArrayList<>();
      for (int i = 0; i < 100; i += 2) {
      list1.add(i);
      }
 
      assertEquals(50, NewNumbersMain.union(list1, list1).size());
-     }*/
+     }
 }

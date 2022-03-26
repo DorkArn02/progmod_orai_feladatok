@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class PublicTransportTest {
     //TODO Before doing a task remove "/*" and "*/" in its test class (Shortcut: Ctrl + Shift + /).
 
-    /*
+
     @Test
     public void testSetLineNumber() {
         int lineNumber = 10;
@@ -120,5 +120,5 @@ public class PublicTransportTest {
 
         assertEquals(4, transport.getVehicles().size());
     }
-    */
+
 }

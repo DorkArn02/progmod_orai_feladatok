@@ -13,7 +13,7 @@ public class EmployeeTest {
     private static final int birthYear = 2000;
     private static final int salary = 400_000;
 
-    /*
+
     @Test
     public void testConstructor() {
         Employee employee = new Employee(name, birthYear, address, EyeColor.BLUE, position, salary);
@@ -86,5 +86,5 @@ public class EmployeeTest {
         employee.setSalary(salary);
         assertEquals(salary, employee.getSalary());
     }
-    */
+
 }

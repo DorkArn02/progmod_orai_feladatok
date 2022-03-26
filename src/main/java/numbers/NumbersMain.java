@@ -95,7 +95,7 @@ public class NumbersMain {
     /**
      * Task 4: Create a static convertDoubleToDouble method, which does:
      *   1. Convert the double parameter to int.
-     *   2. Convert the the int value to double. (Cut the real part.)
+     *   2. Convert the int value to double. (Cut the real part.)
      *   3. Return the double value.
      */
     public static double convertDoubleToDouble(double number) {

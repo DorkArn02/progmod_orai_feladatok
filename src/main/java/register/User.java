@@ -4,6 +4,7 @@ public class User {
     private String name;
     private int birthYear;
     private String address;
+    private EyeColor eyeColor;
 
     public User() {
         this("John Doe", 1987, "Baker Street 135");
@@ -13,6 +14,21 @@ public class User {
         this.name = name;
         this.birthYear = birthYear;
         this.address = address;
+    }
+
+    public User(String name, int birthYear, String address, EyeColor eyeColor) {
+        this.name = name;
+        this.birthYear = birthYear;
+        this.address = address;
+        this.eyeColor = eyeColor;
+    }
+
+    public EyeColor getEyeColor() {
+        return eyeColor;
+    }
+
+    public void setEyeColor(EyeColor eyeColor) {
+        this.eyeColor = eyeColor;
     }
 
     public String getName() {

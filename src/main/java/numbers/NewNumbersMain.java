@@ -147,14 +147,12 @@ public class NewNumbersMain {
 
     /**
      * Task 6: Create a selectEvenNumbers method, what return a subset of the list parameter.
-     * The subset list has to contains all and only the even numbers.
+     * The subset list has to contain all and only the even numbers.
      * Call this method in main and print a message with the length of subset list or
      * the static "There are no even number in the list" message.
      */
     public static ArrayList<Integer> selectEvenNumbers(ArrayList<Integer> l) {
-
         ArrayList<Integer> even = new ArrayList<>();
-
         for (int i = 0; i < l.size(); i++) {
             if (l.get(i) % 2 == 0)
                 even.add(i);
@@ -181,8 +179,8 @@ public class NewNumbersMain {
 
     /**
      * Task 8: Create a separateEvenAndOdds method, what create 2 sublist of the list parameter.
-     * First sublist has to contains all and only the even numbers, and the second one
-     * has to contains all and only the odd numbers.
+     * First sublist has to contain all and only the even numbers, and the second one
+     * has to contain all and only the odd numbers.
      * Print to console:
      * - sublist of even numbers
      * - sublist of odd numbers
